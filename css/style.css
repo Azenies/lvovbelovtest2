@@ -56,7 +56,7 @@ audio, audio:active, audio:hover {
   display: none;
 }
 
-.collapse {
+header .collapse {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -356,6 +356,13 @@ a.dropdown-menu, .btn-social {
           box-sizing: border-box;
 }
 
+.responsive-width__secondary {
+  height: auto;
+  max-width: 75%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .stylish-hr {
   opacity: 60%;
   margin-top: -15px;
@@ -386,5 +393,15 @@ a.dropdown-menu, .btn-social {
 .listen-button__about {
   width: 150px;
   max-width: 100%;
+}
+
+.collapse-text {
+  color: #E2E3E8;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.collapse-text:hover {
+  text-decoration: none;
+  color: #E2E3E8;
 }
 /*# sourceMappingURL=style.css.map */
