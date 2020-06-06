@@ -24,17 +24,9 @@ ul {
           padding-inline-start: 0px;
 }
 
-.wrapper {
-  margin-right: auto;
-  /* 1 */
-  margin-left: auto;
-  /* 1 */
-  margin-top: 80px;
-  max-width: 80vw;
-  padding-right: 0px;
-  /* 3 */
-  padding-left: 0px;
-  /* 3 */
+audio, audio:active, audio:hover {
+  border: none;
+  outline: none;
 }
 
 .navbar {
@@ -69,8 +61,134 @@ ul {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.bg-lb {
-  background: radial-gradient(circle, rgba(174, 51, 50, 0.95) 0%, rgba(184, 72, 71, 0.95) 100%);
+.logo-menu {
+  width: 150px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  color: #FEFEFE;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu ul li:hover {
+  background: rgba(233, 233, 233, 0.3);
+  color: #FEFEFE;
+  font-weight: bold;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #FEFEFE;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.menu ul li.author {
+  font-size: 10px;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.menu ul li.author:hover {
+  background: inherit;
+  color: #FEFEFE;
+  font-weight: inherit;
+}
+
+.main {
+  background-image: url("../img/main.png");
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel {
+  padding: 20px 0;
+}
+
+.carousel_inner {
+  position: relative;
+  width: 900px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.carousel_item {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.eternal {
+  background-image: url("../img/backgrounds/eternalback.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.eternal-heading {
+  text-transform: uppercase;
+  color: #858585;
+  font-weight: 300;
+  font-size: 5vh;
+  text-shadow: 1px 1px 1px black;
+}
+
+.faceless {
+  background-image: url("../img/backgrounds/facelessback.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.faceless-heading {
+  text-transform: uppercase;
+  color: #F2F2F2;
+  font-weight: 300;
+  font-size: 8vh;
+  text-shadow: 1px 1px 1px black;
+}
+
+.faceless-video {
+  background-image: url("../img/backgrounds/facelessvidback.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fvid {
+  height: 65vh;
 }
 
 button.navbar-toggler {
@@ -161,56 +279,6 @@ button.navbar-toggler {
   width: 0%;
 }
 
-.logo-menu {
-  width: 150px;
-}
-
-.menu {
-  width: 100%;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.menu ul li {
-  color: #FEFEFE;
-  font-size: 15px;
-  letter-spacing: 2px;
-  padding: 15px 0;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.menu ul li:hover {
-  background: rgba(233, 233, 233, 0.3);
-  color: #FEFEFE;
-  font-weight: bold;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #FEFEFE;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.menu ul li.author {
-  font-size: 10px;
-  padding: 0;
-  padding-bottom: 15px;
-}
-
-.menu ul li.author:hover {
-  background: inherit;
-  color: #FEFEFE;
-  font-weight: inherit;
-}
-
 .dropdown-menu {
   padding: 0;
   margin: 0;
@@ -259,29 +327,6 @@ a.dropdown-menu, .btn-social {
           transform: scale(1.8);
 }
 
-.main {
-  background-image: url("../img/main.png");
-  background-position-y: bottom;
-  background-position-x: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .logo-main {
   height: 30vh;
   -webkit-box-sizing: border-box;
@@ -291,18 +336,17 @@ a.dropdown-menu, .btn-social {
   z-index: 2;
 }
 
-.dropdown-menu-center {
-  top: 40px !important;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%) !important;
-          transform: translateX(-50%) !important;
-  border: 1px solid black;
-  min-width: 90vw;
-  max-width: 90vw;
+.logo-secondary {
+  height: 20vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 25px;
+  opacity: 70%;
+  z-index: 2;
 }
 
-.btn-danger {
-  background-color: #AE3332;
+.bg-lb {
+  background: radial-gradient(circle, rgba(174, 51, 50, 0.95) 0%, rgba(184, 72, 71, 0.95) 100%);
 }
 
 .responsive-width {
@@ -339,60 +383,8 @@ a.dropdown-menu, .btn-social {
   max-width: 100%;
 }
 
-.eternal-heading {
-  text-transform: uppercase;
-  color: #858585;
-  font-weight: 300;
-  font-size: 5vh;
-  text-shadow: 1px 1px 1px black;
-}
-
-.faceless-heading {
-  text-transform: uppercase;
-  color: #F2F2F2;
-  font-weight: 300;
-  font-size: 8vh;
-  text-shadow: 1px 1px 1px black;
-}
-
-.carousel {
-  padding: 20px 0;
-}
-
-.carousel_inner {
-  position: relative;
-  width: 900px;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.carousel_item {
-  margin: 0 auto;
+.listen-button__about {
+  width: 150px;
   max-width: 100%;
-}
-
-.eternal {
-  background-image: url("../img/backgrounds/eternalback.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.faceless {
-  background-image: url("../img/backgrounds/facelessback.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.faceless-video {
-  background-image: url("../img/backgrounds/facelessvidback.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.fvid {
-  height: 65vh;
 }
 /*# sourceMappingURL=style.css.map */
