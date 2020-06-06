@@ -99,16 +99,23 @@ header .collapse {
   transition: color 0.3s ease;
 }
 
-.menu ul li.author {
+.menu .author, .menu .author a {
   font-size: 10px;
   padding: 0;
   padding-bottom: 15px;
 }
 
-.menu ul li.author:hover {
+.menu .author:hover, .menu .author a:hover {
   background: inherit;
   color: #FEFEFE;
-  font-weight: inherit;
+}
+
+.menu .author a {
+  font-weight: 300;
+}
+
+.menu .author a:hover {
+  font-weight: 700;
 }
 
 .main {
@@ -189,6 +196,13 @@ header .collapse {
 
 .fvid {
   height: 65vh;
+}
+
+.fvid iframe {
+  height: 100%;
+  width: 1000px;
+  max-width: 100%;
+  border: 0;
 }
 
 button.navbar-toggler {
@@ -368,6 +382,10 @@ a.dropdown-menu, .btn-social {
   margin-top: -15px;
 }
 
+.coverart {
+  height: 450px;
+}
+
 .shadow {
   -webkit-box-shadow: 2px 2px 2px #000000;
           box-shadow: 2px 2px 2px #000000;
@@ -403,5 +421,13 @@ a.dropdown-menu, .btn-social {
 .collapse-text:hover {
   text-decoration: none;
   color: #E2E3E8;
+}
+
+.quote-up {
+  float: left;
+}
+
+.quote-down {
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */

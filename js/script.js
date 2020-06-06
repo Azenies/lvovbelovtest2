@@ -16,13 +16,24 @@
 
   });
 
-  $('.dropdown').on('show.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).fadeIn();
-  });
+  $(function(){
+    // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+    $('.dropdown').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).fadeIn();
+    });
 
-  $('.dropdown').on('hide.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).fadeOut();
-  });
+    // ADD SLIDEUP ANIMATION TO DROPDOWN //
+    $('.dropdown').on('hide.bs.dropdown', function(e){
+        e.preventDefault();
+        $(this).find('.dropdown-menu').first().stop(true, true).fadeOut(400, function(){
+            //On Complete, we reset all active dropdown classes and attributes
+            //This fixes the visual bug associated with the open class being removed too fast
+            $('.dropdown').removeClass('show');
+            $('.dropdown-menu').removeClass('show');
+            $('.dropdown').find('.dropdown-toggle').attr('aria-expanded','false');
+        });
+    });
+});
 
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
